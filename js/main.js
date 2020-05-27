@@ -38,6 +38,7 @@ alert(fruta.cor);
 
 console.log(frutas);*/
 
+/*
 //aula 3
 var idade = prompt("Qual a sua idade?"); //prompt exibe uma pergunta com uma caixa de texto para o usuario escrever
 //var idade = 18;
@@ -60,4 +61,31 @@ for (i = 0; i <= 5; i++) {
 }
 
 var d = new Date();
-alert(d.getMonth() + 1);
+alert(d.getMonth() + 1);*/
+
+//aula 4
+
+function soma(n1, n2) {
+  return n1 + n2;
+}
+
+alert(soma(5, 10));
+
+function setReplace(frase, nome, novo_nome) {
+  return frase.replace(nome, novo_nome);
+}
+alert(setReplace("Vai Japao", "Japao", "Brasil"));
+
+//se var validar fosse aqui, a variavel fica no escopo global
+function validaIdade(idade) {
+  var validar;
+  if (idade >= 18) {
+    validar = true;
+  } else {
+    validar = false;
+  }
+  return validar;
+}
+
+var idade = prompt("Qual sua idade?");
+console.log(validaIdade(idade));
