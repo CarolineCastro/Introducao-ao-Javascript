@@ -1,3 +1,35 @@
-var nome = "Caroline Castro";
+/**var nome = "Caroline Castro";
 var idade = 29;
-alert("Bem vindo " + nome + " tem " + idade + " anos.");
+var idade2 = 10; //se transformados em string o alert as concatena
+var frase = "Japao e o melhor time do mundo"
+//alert("Bem vindo " + nome + " tem " + idade + " anos.");
+//alert(idade + idade2);
+
+console.log(nome); //faz com que as variaveis sejam exibidas no console
+console.log(idade + idade2);
+console.log(frase.replace("Japao", "Brasil"));  //o replace substitui o que esta antes da virgula para o que esta depois
+console.log(frase.toUpperCase);  //coloca o texto em caixa alta
+console.log(frase.toLowerCase);  //coloca o texto em caixa baixa
+
+//o console pode ser usado para debigar o codigo*/
+
+var lista = ["maca", "pera", "laranja"]; //array
+
+//var fruta = {nome:"maca", cor:"vermelha"} //diciionario
+
+var frutas = [
+  { nome: "maca", cor: "vermelha" },
+  { nome: "uva", cor: "roxa" },
+];
+
+//lista.push("uva"); inserir um elemento na lista
+//lista.pop(); remove o ultimo elemento da lista
+//console.log(lista[1]);
+console.log(lista.reverse()); //reverse imprime os itens da lista ao contrario
+console.log(lista.toString()); //transforma a lista em string
+console.log(lista.join("-")); //separa os elementos da lista com o que estiver entre ""
+
+console.log(fruta.nome);
+alert(fruta.cor);
+
+console.log(frutas);
