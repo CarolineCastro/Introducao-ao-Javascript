@@ -63,6 +63,7 @@ for (i = 0; i <= 5; i++) {
 var d = new Date();
 alert(d.getMonth() + 1);*/
 
+/*
 //aula 4
 
 function soma(n1, n2) {
@@ -88,4 +89,32 @@ function validaIdade(idade) {
 }
 
 var idade = prompt("Qual sua idade?");
-console.log(validaIdade(idade));
+console.log(validaIdade(idade));*/
+
+//aula 5
+
+function clicou() {
+  //alert("obrigado por clicar");
+  document.getElementById("agradecimento").innerHTML =
+    "<b>Obrigado por clicar</b>";
+  //console.log(document.getElementById("agradecimento"));
+}
+function redirecionar() {
+  window.open("https://globallabs.academy/");
+  window.Location.href = "https://globallabs.academy/";
+}
+function trocar(elemento) {
+  //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+  //alert("trocar texto");
+  elemento.innerHTML = "Obrigado por passar o mouse";
+}
+function voltar(elemento) {
+  //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+  elemento.innerHTML = "Passe o mouse aqui";
+}
+function load() {
+  alert("Pagina carregada");
+}
+function funcaoChance(elemento) {
+  console.log(elemento.value);
+}
